@@ -4,6 +4,9 @@ body{
     font-family: var(--mainFont);
     background-color: #eee;
 }
+.menu{
+    display: none;
+}
 .header{
     background-color: #fff;
     padding: 10px 0;
@@ -22,6 +25,7 @@ body{
 }
 .nav ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 .nav .home{
@@ -33,6 +37,7 @@ body{
 .auth{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 16px;
 }
 .auth a{
@@ -50,4 +55,14 @@ body{
     background-color: var(--mainColor);
     border: 2px solid var(--mainColor);
     font-weight: 700;
+}
+
+@media  screen and (max-width:992px) {
+    .nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+        order: 2;
+    }
 }
