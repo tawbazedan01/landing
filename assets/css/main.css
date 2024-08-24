@@ -57,12 +57,28 @@ body{
     font-weight: 700;
 }
 
-@media  screen and (max-width:992px) {
-    .nav{
+@media  screen and (max-width:992px){
+    .nav,
+    .auth{
         display: none;
     }
     .menu{
         display: block;
         order: 2;
     }
+}
+
+@media  screen and (max-width:576px){
+    .container{
+        width: calc( 100% - 50px );
+    }
+
+    .header .logo img{
+        width: 20px;
+    }
+
+    .header .logo a{
+        font-size: 14px; 
+        }
+    
 }
