@@ -166,7 +166,7 @@ body{
         width: 100%;
     }
 }
-@media  screen and (max-width:458px) {
+@media  screen and (min-width:355) and (max-width:458px) {
     .regi-ster .register-1{
         padding: 5px 25px;
         border-radius: 10px;
@@ -177,8 +177,6 @@ body{
     }
     
 }
-
-
 .courses{
     background-color: #fff; 
 }
@@ -277,6 +275,7 @@ body{
     gap: 40px;
 }
 .row .testimonial{
+    position: relative;
     padding: 20px;
     margin: 20px 0;
     box-sizing: border-box;
@@ -285,6 +284,17 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.testimonial ::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 40px solid #96969615;
+    border-bottom: 40px solid transparent;
+    border-right: 40px solid #96969615;
+    border-left: 40px solid transparent;
+
 }
 .user-info{
     display: flex;
