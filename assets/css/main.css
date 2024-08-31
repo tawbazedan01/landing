@@ -177,6 +177,53 @@ body{
     }
     
 }
+.service{
+    background-color: #F5F5F5;
+}
+.service-1{
+    display: flex;
+    padding: 80px 40px;
+    gap: 20px;
+}
+.serv-1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.serv-1 p:first-child{
+    color: var(--mainColor);
+}
+.serv-1 p:last-of-type{
+    color: #969696;
+}
+.serv-2{
+    display: flex;
+    gap: 30px;
+}
+
+.serv-2 .teacher{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+    height: 220px;
+    width: 220px;
+    border-radius: 10px;
+    background-color: var(--mainColor);
+}
+.serv-2 .teacher i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: yellow;
+    font-size: 20px;
+}
+
 .courses{
     background-color: #fff; 
 }
