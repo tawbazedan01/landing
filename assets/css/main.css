@@ -9,7 +9,8 @@ body{
 }
 .header{
     background-color: #fff;
-    padding: 10px 0;
+    box-shadow:  9px 9px rgba(0, 0, 0, 0.1);
+
 } 
 .header .logo{
     display: flex;
@@ -82,8 +83,75 @@ body{
         }
     
 }
+.start{
+    background-color: #fff;
+    padding: 20px 20px;
+
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 40%; 
+    gap: 25px; 
+}
+.about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about-us p:first-of-type{
+    color: var(--mainColor);
+}
+.about-us p span{
+    font-weight: 700;
+}
+.about-us span{
+    color: var(--mainColor);
+}
+.about-us h2,
+.play-video{
+    color: black;
+}
+.about-us p:last-of-type{
+    color: #969696;
+}
+.regi-ster{
+    display: flex;
+    gap: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+.regi-ster .register-1{
+    color: #fff;
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    padding: 10px 40px;
+    border-radius: 15px;
+}
+.regi-ster .play-video{
+    display: flex;
+    gap: 10px;
+    border: 2px solid #fff;
+    padding: 10px 40px;
+}
+.regi-ster .play-video .fa-circle-play{
+    color: yellow;
+    font-size: 25px;
+
+} 
+.pic{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.pic img{
+    width: 60%;
+}
+
+
+
 .courses{
-    background-color: #F4F4F4; 
+    background-color: #fff; 
 }
 
 .courses .row{
@@ -160,13 +228,13 @@ body{
     .course-items{
         width: 100%;
     }
+
 }
 
 @media  screen and (max-width:576px) {
     .course{
         width: 100%;
     }
-    
 }
 
 .testimonials h2{
@@ -174,7 +242,7 @@ body{
 }
 .testimonials{
     padding: 50px 0;
-    background-color: #F4F4F4;
+    background-color: #fff;
 }
 .testimonials .row{
     gap: 40px;
