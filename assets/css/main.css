@@ -8,6 +8,7 @@ body{
     display: none;
 }
 .header{
+    padding: 20px;
     background-color: #fff;
     box-shadow:  9px 9px rgba(0, 0, 0, 0.1);
 
@@ -91,7 +92,7 @@ body{
 .about{
     display: flex;
     flex-direction: column;
-    width: 40%; 
+    width: 43%; 
     gap: 25px; 
 }
 .about-us{
@@ -108,7 +109,10 @@ body{
 .about-us span{
     color: var(--mainColor);
 }
-.about-us h2,
+.about .about-us h1{
+    background-color: #fff;
+    width: 40%;
+}
 .play-video{
     color: black;
 }
@@ -156,8 +160,11 @@ body{
         gap: 5px;
         padding: 5px;
     }
+    .about .about-us h1{
+        width: 55%;
+    }
 }
-@media  screen and (max-width:839px) {
+@media  screen and (max-width:836px) {
     .start .row{
         gap: 20px;
     }
@@ -165,8 +172,16 @@ body{
     .pic{
         width: 100%;
     }
+    .about .about-us h1{
+        width: 55%;
+    }
 }
-@media  screen and (min-width:355) and (max-width:458px) {
+@media  screen and (max-width:767px) {
+    .about .about-us h1{
+        width: 30%;
+    }
+}
+@media  screen and (max-width:577px) {
     .regi-ster .register-1{
         padding: 5px 25px;
         border-radius: 10px;
@@ -175,6 +190,10 @@ body{
         gap: 5px;
         padding: 5px;
     }
+    .about .about-us h1{
+        width: 50%;
+    }
+
     
 }
 .service{
@@ -222,6 +241,25 @@ body{
     background-color: #fff;
     color: yellow;
     font-size: 20px;
+}
+@media  screen and (max-width:900px) {
+   .service-1{
+    flex-direction: column;
+   }
+   .serv-1{
+    width: 60%;
+   }
+}
+@media  screen and (max-width:600px) {
+    .service-1{
+        flex-direction: column;
+    }
+    
+    .serv-2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .courses{
