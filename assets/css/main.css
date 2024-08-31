@@ -147,7 +147,36 @@ body{
 .pic img{
     width: 60%;
 }
-
+@media  screen and (min-width:0) and (max-width:1080px) {
+    .regi-ster .register-1{
+        padding: 5px 25px;
+        border-radius: 10px;
+    }
+    .regi-ster .play-video{
+        gap: 5px;
+        padding: 5px;
+    }
+}
+@media  screen and (max-width:839px) {
+    .start .row{
+        gap: 20px;
+    }
+    .about,
+    .pic{
+        width: 100%;
+    }
+}
+@media  screen and (max-width:458px) {
+    .regi-ster .register-1{
+        padding: 5px 25px;
+        border-radius: 10px;
+    }
+    .regi-ster .play-video{
+        gap: 5px;
+        padding: 5px;
+    }
+    
+}
 
 
 .courses{
