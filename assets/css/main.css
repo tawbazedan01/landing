@@ -191,10 +191,9 @@ body{
     }
     .about .about-us h1{
         width: 50%;
-    }
-
-    
+    }   
 }
+
 .service{
     background-color: #F5F5F5;
 }
@@ -440,7 +439,7 @@ body{
     flex-direction: column;
     gap: 10px;
 }
-.testimonial ::after{
+.testimonial::after{
     content: '';
     position: absolute;
     top: 0;
